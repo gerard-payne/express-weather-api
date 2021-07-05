@@ -1,0 +1,43 @@
+{
+    "name": "express-weather-api",
+    "version": "0.0.1",
+    "main": "index.js",
+    "repository": "https://github.com/gerard-payne/express-weather-api.git",
+    "author": "Gerard Payne<software@gerard-payne.net>",
+    "license": "Unlicense",
+    "private": true,
+    "engines": {
+        "node": "16"
+    },
+    "type": "module",
+    "scripts": {
+        "start": "nodemon firebase serve",
+        "postinstall": "husky install",
+        "pre-commit": "lint-staged",
+        "lint": "eslint .",
+        "lint-fix": "eslint . --fix --ext .js",
+        "format": "prettier --write --check ."
+    },
+    "dependencies": {
+        "@firebase/app-types": "^0.6.2",
+        "axios": "^0.21.1",
+        "cookie-parser": "~1.4.4",
+        "express": "~4.16.1",
+        "firebase": "9.0.0-beta.6",
+        "firebase-admin": "^9.10.0",
+        "firebase-functions": "^3.14.1",
+        "http-errors": "~1.6.3",
+        "morgan": "~1.9.1",
+        "nodemon": "^2.0.9"
+    },
+    "devDependencies": {
+        "babel-eslint": "^10.1.0",
+        "debug": "~2.6.9",
+        "eslint": "^7.29.0",
+        "eslint-config-google": "^0.14.0",
+        "firebase-functions-test": "^0.2.0",
+        "husky": "^7.0.0",
+        "lint-staged": "^11.0.0",
+        "prettier": "^2.3.2"
+    }
+}

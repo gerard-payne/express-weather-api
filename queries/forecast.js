@@ -17,7 +17,7 @@ const forecast = async (sLocation) => {
 };
 
 const getMissingRecord = async (sLocation) => {
-    const API_KEY = process.env.OPENMAP_API; // only used here, only in scope here
+    const API_KEY = process.env.OPENMAP_API_KEY; // only used here, only in scope here
 
     const ajax = await axios({
         method: "get",

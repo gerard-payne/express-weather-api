@@ -28,7 +28,6 @@ const routes = () => {
         "/weather/:location",
         async (oRequest, oResponse) => {
             const response = await forecast(oRequest.params.location);
-            console.log(response);
             oResponse.status(200).json(response).end();
             return oResponse;
         }

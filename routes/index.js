@@ -33,6 +33,19 @@ const routes = () => {
         }
     );
 
+    router.post(
+        "/weather/:location",
+        async (oRequest, oResponse) => {
+            /* here I would handle post request, same way just different firebase calls.
+            but this app already adds pretty much anything,
+            to this end I would actually use cityList to create restrictions
+            then add date checks to make sure the data is fresh enough*/
+            // const response = await newLocation(oRequest.params.location);
+            oResponse.status(501).end();
+            return oResponse;
+        }
+    );
+
     return router;
 };
 
